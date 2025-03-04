@@ -140,7 +140,6 @@ body {
   flex-wrap: wrap;
   align-items: end;
   justify-content: space-between;
-  padding-top: 120px;
   position: absolute;
   left: 0;
   right: 0;
@@ -539,6 +538,7 @@ footer .content-wrap {
 
 .footer-bottom {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   margin-top: 20px;
