@@ -642,4 +642,224 @@ footer .content-wrap {
     right: 11px;
     font-weight: 400;
   }
+
+  .secondary-text-container {
+    position: static !important;
+  }
+
+  .main__service-description {
+    font-size: 1rem;
+    padding: 0;
+  }
+
+  .main__hero .secondary-text-container {
+    padding: 0;
+  }
+
+  .main__solutions {
+    padding: 110px 15px 15px;
+  }
+
+  .main__solutions-heading {
+    font-size: 35px;
+    line-height: 1.2;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+
+  .main__solutions-heading img {
+    width: 70px;
+  }
+
+  .btn--purple {
+    padding: 22px 30px;
+    font-size: 13px;
+  }
+
+  .solutions_card {
+    margin-top: 70px;
+    padding: 46px 16px;
+  }
+
+  .card__heading {
+    padding: 0;
+    font-size: 26px;
+  }
+
+  .card__tag {
+    font-size: 20px;
+    padding: 8px 3px;
+    white-space: nowrap;
+  }
+
+  .main__case-studies {
+    padding: 63px 16px;
+  }
+
+  .case-studies__heading {
+    font-size: 35px;
+  }
+
+  .case-card__container {
+    margin-top: 30px;
+    border-radius: 15px;
+    padding-bottom: 115px;
+  }
+
+  .case-card__sub-heading {
+    font-size: 27px;
+    padding: 47px 10px 0;
+  }
+
+  .btn--white {
+    padding: 20px 25px;
+    bottom: 8px;
+    left: 10px;
+    font-size: 13px;
+  }
+
+  .btn--orange {
+    margin-top: 35px;
+    padding: 22px 28px;
+    font-size: 13px;
+  }
+
+  .sponsors {
+    margin-top: 80px;
+  }
+
+  .experiences {
+    padding: 10px 0;
+  }
+
+  .experiences .posts {
+    padding: 12px;
+  }
+
+  .experiences .section-header h2 {
+    font-size: 34px;
+    line-height: 1.3;
+  }
+
+  .experiences .card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .experiences .card-content {
+    height: auto;
+  }
+
+  .experiences .card-image {
+    display: none;
+  }
+
+  .experiences .content-bottom {
+    height: auto;
+    padding: 21px 15px;
+  }
+
+  .experiences .content-bottom .text-wrap {
+    margin-bottom: 25px;
+  }
+
+  .experiences .content-bottom h4 {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  .experiences .user-image {
+    width: 25px;
+    height: 25px;
+  }
+
+  .user-profile h2 {
+    font-size: 14px;
+  }
+
+  footer {
+    padding: 40px 10px 50px;
+  }
+
+  footer .content-wrap {
+    text-align: left;
+  }
+
+  .footer-info {
+    flex-wrap: wrap;
+    margin-bottom: 235px;
+  }
+
+  .footer-nav {
+    max-width: none;
+    margin: 0 -50px;
+    padding: 0 25px;
+  }
+
+  .footer-nav ul {
+    padding: 0 50px;
+  }
+
+  .footer-nav ul li {
+    margin-bottom: 17px;
+  }
+
+  .footer-nav ul li a {
+    font-size: 15px;
+  }
+
+  .footer-buttons {
+    width: 100%;
+    margin: 0;
+  }
+
+  .call-button,
+  .team-button {
+    padding: 20px;
+    font-size: 15px;
+  }
+
+  .circle {
+    width: 290px;
+    height: 290px;
+    top: 175px;
+  }
+
+  .footer-hero-text {
+    font-size: 35px;
+  }
+
+  .footer-bottom a {
+    padding: 20px;
+    font-size: 14px;
+    margin: 10px 6px;
+  }
+
+  .footer-bottom a:first-child {
+    width: 100%;
+  }
+
+  .social-links {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .social-links a {
+    border-radius: 100%;
+    height: 60px !important;
+    width: 60px !important;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .social-links a:first-child {
+    margin-right: 25px;
+  }
+
+  .credits {
+    font-size: 15px;
+  }
 }
