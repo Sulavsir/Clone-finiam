@@ -15,10 +15,6 @@ ul {
   letter-spacing: 5px;
 }
 
-.main__service-sub-heading {
-  letter-spacing: 5px;
-}
-
 p {
   letter-spacing: 1px;
 }
@@ -97,14 +93,21 @@ body {
 
 .navbar__menu-toggle {
   display: none;
-  font-size: 24px;
-  cursor: pointer;
+  align-items: center;
+}
+.navbar__menu-toggle span {
+  display: block;
+  width: 42px;
+  height: 4px;
+  background-color: #fcd5dc;
+  border-radius: 2px;
+  margin-top: 5px;
 }
 
 .main__container {
   height: calc(100vh - 126px);
-  background: #272727;
   position: relative;
+  z-index: 11;
 }
 
 .main__balls-container {
@@ -127,38 +130,37 @@ body {
 .main__hero {
   display: flex;
   flex-wrap: wrap;
-  align-items: start;
-  padding: 15px 40px;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 15px 40px 75px;
+  height: 100%;
 }
 
 .main__hero .text-wrap {
   width: 100%;
+  flex: 1;
 }
 
 .main__hero .secondary-text-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: end;
-  justify-content: space-between;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 115px;
   padding: 0 10px;
 }
 
 .main__hero-heading {
-  font-size: 140px;
+  font-size: 117px;
   line-height: 1;
   color: #fbf5f1;
   font-weight: bold;
 }
 
 .main__service-sub-heading {
-  font-size: 140px;
+  font-size: 130px;
+  letter-spacing: 5px;
   line-height: 1;
   color: #fbf5f1;
   text-align: right;
+  position: absolute;
+  bottom: 10%;
+  right: 11px;
 }
 
 .main__service-description {
@@ -248,6 +250,7 @@ body {
   color: #aa9acc;
   border-radius: 5px;
   padding: 15px 10px;
+  white-space: nowrap;
 }
 
 .main__case-studies {
@@ -548,12 +551,11 @@ footer .content-wrap {
   display: inline-block;
   background: transparent;
   border: 1px solid #f5f2eb;
-  padding: 5px 10px;
+  padding: 22px 27px;
   border-radius: 25px;
-  font-size: 14px;
   color: #f5f2eb;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 20px;
   margin: 50px 15px;
 }
 .footer-bottom a:hover {
@@ -587,9 +589,480 @@ footer .content-wrap {
   font-weight: 400;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1439px) {
+  .main__hero {
+    padding: 15px 40px 35px;
+  }
+
+  .main__hero-heading {
+    font-size: 100px;
+  }
+
+  .main__balls-container {
+    gap: 2vw;
+  }
+
+  .main__service-sub-heading {
+    font-size: 100px;
+  }
+
   .main__container {
-    height: calc(100vh - 40px);
+    height: calc(100vh - 112px);
+  }
+
+  .main__service-description {
+    padding: 0;
+    font-size: 1rem;
+  }
+
+  .main__solutions {
+    padding: 110px 60px 35px;
+  }
+
+  .main__solutions-heading {
+    font-size: 65px;
+    margin-bottom: 65px;
+    line-height: 1.4;
+  }
+
+  .solutions_card {
+    margin-top: 150px;
+    padding: 40px;
+  }
+
+  .card__heading {
+    font-size: 40px;
+    line-height: 2.2;
+  }
+
+  .main__case-studies {
+    padding: 108px 40px;
+  }
+
+  .case-studies__heading {
+    font-size: 75px;
+  }
+
+  .case-card__sub-heading {
+    padding-top: 100px;
+    font-size: 50px;
+    padding-left: 30px;
+  }
+
+  .section-header h2 {
+    font-size: 60px;
+    margin-top: 0;
+  }
+
+  .experiences {
+    padding: 60px 40px;
+  }
+
+  .posts {
+    margin-top: 80px;
+  }
+
+  .experiences .content-bottom h4 {
+    font-size: 20px;
+  }
+
+  .experiences .card-content {
+    height: 485px;
+  }
+
+  .user-profile h2 {
+    font-size: 17px;
+    line-height: 1;
+  }
+
+  footer {
+    padding: 100px 20px 50px;
+  }
+
+  .footer-info {
+    margin-bottom: 230px;
+  }
+
+  .footer-hero-text {
+    font-size: 105px;
+  }
+
+  .call-button,
+  .team-button {
+    font-size: 20px;
+    line-height: 1;
+    padding: 25px 65px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .main__container {
+    height: calc(100vh - 65px);
+  }
+
+  .navbar {
+    padding: 2px 19px;
+    margin-top: 20px;
+  }
+
+  .navbar__menu-item a {
+    font-size: 14px;
+  }
+
+  .navbar__logo {
+    width: 90px;
+  }
+  .navbar__logo img {
+    max-width: 100%;
+  }
+
+  .btn--primary {
+    font-size: 14px;
+  }
+
+  .main__hero {
+    padding: 55px 21px;
+  }
+
+  .main__hero-heading {
+    font-size: 80px;
+  }
+
+  .main__balls-container {
+    gap: 3.5vw;
+  }
+
+  .main__ball {
+    width: 25px;
+    height: 25px;
+  }
+
+  .main__service-sub-heading {
+    font-size: 77px;
+    position: absolute;
+    font-weight: 400;
+    bottom: 143px;
+    right: 15px;
+  }
+
+  .secondary-text-container {
+    position: static !important;
+  }
+
+  .main__service-description {
+    font-size: 1rem;
+    padding: 0;
+  }
+
+  .main__hero .secondary-text-container {
+    padding: 0;
+  }
+
+  .main__solutions {
+    padding: 113px 15px 20px;
+  }
+
+  .main__solutions .heading-block {
+    padding: 0 60px;
+  }
+
+  .main__solutions-heading {
+    font-size: 50px;
+    line-height: 1.2;
+    margin-bottom: 38px;
+    margin-left: 0;
+  }
+
+  .main__solutions-heading img {
+    width: 50px;
+  }
+
+  .btn--purple {
+    padding: 17px 37px;
+    font-size: 13px;
+  }
+
+  .solutions_card {
+    margin-top: 100px;
+    padding: 149px 57px;
+  }
+
+  .card__tag--green,
+  .card__tag--purple {
+    padding: 10px 6px;
+  }
+
+  .card__heading {
+    padding: 0;
+    font-size: 30px;
+    line-height: 2.2;
+  }
+
+  .card__tag {
+    font-size: 20px;
+    padding: 8px 3px;
+    white-space: nowrap;
+  }
+
+  .main__case-studies {
+    padding: 70px 80px;
+  }
+
+  .case-studies__heading {
+    font-size: 50px;
+  }
+
+  .case__card {
+    margin-top: 43px;
+  }
+
+  .case-card__container {
+    margin-top: 30px;
+    border-radius: 45px;
+    padding-bottom: 155px;
+  }
+
+  .case-card__sub-heading {
+    font-size: 32px;
+    padding: 75px 25px 0;
+  }
+
+  .btn--white {
+    padding: 15px 33px;
+    bottom: 27px;
+    left: 24px;
+    font-size: 13px;
+  }
+
+  .btn--orange {
+    margin-top: 32px;
+    padding: 16px 36px;
+    font-size: 14px;
+  }
+
+  .sponsors {
+    margin-top: 80px;
+  }
+
+  .experiences {
+    padding: 10px 0;
+  }
+
+  .experiences .posts {
+    padding: 12px 78px 64px;
+    margin-top: 30px;
+  }
+
+  .experiences .section-header {
+    padding: 0 79px;
+  }
+
+  .experiences .section-header h2 {
+    font-size: 46px;
+    line-height: 1.3;
+  }
+
+  .experiences .card {
+    margin-bottom: 20px;
+  }
+
+  .experiences .block-header h3 {
+    font-size: 16px;
+    margin-bottom: 28px;
+  }
+
+  .experiences .card-content {
+    height: 398px;
+  }
+
+  .experiences .content-bottom {
+    padding: 22px 12px 15px;
+  }
+
+  .experiences .content-bottom .text-wrap {
+    margin-bottom: 25px;
+  }
+
+  .experiences .content-bottom h4 {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .experiences .user-image {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+  }
+
+  .btn--green {
+    padding: 15px 30px;
+    font-size: 15px;
+    margin-top: 3px;
+  }
+
+  .user-profile h2 {
+    font-size: 14px;
+  }
+
+  footer {
+    padding: 120px 53px 60px;
+  }
+
+  footer .content-wrap {
+    text-align: left;
+  }
+
+  .footer-info {
+    flex-wrap: wrap;
+    margin-bottom: 270px;
+  }
+  .footer-nav {
+    margin: 0 -50px;
+    padding: 0 25px;
+  }
+
+  .footer-nav ul {
+    padding: 0 50px;
+  }
+
+  .footer-nav ul li {
+    margin-bottom: 17px;
+  }
+
+  .footer-nav ul li a {
+    font-size: 15px;
+  }
+
+  .footer-buttons {
+    margin: 18px 0;
+  }
+
+  .call-button,
+  .team-button {
+    padding: 16px 43px;
+    font-size: 15px;
+  }
+
+  .circle {
+    width: 450px;
+    height: 450px;
+    top: 188px;
+  }
+
+  .footer-hero-text {
+    font-size: 80px;
+  }
+
+  .footer-bottom {
+    justify-content: flex-start;
+    margin-top: 55px;
+  }
+
+  .footer-bottom a {
+    padding: 15px 30px;
+    margin: 4px 0;
+  }
+
+  .social-links {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 18px;
+    flex: 1;
+  }
+
+  .social-links a {
+    border-radius: 100%;
+    height: 55px !important;
+    width: 55px !important;
+    font-size: 15px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .social-links a:first-child {
+    margin-right: 10px;
+  }
+
+  .credits {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 967px) {
+  .main__ball {
+    width: 20px;
+    height: 20px;
+  }
+
+  .main__hero-heading {
+    font-size: 60px;
+    font-weight: 400;
+  }
+
+  .main__service-sub-heading {
+    font-size: 57px;
+  }
+
+  .main__service-description {
+    font-size: 13px;
+  }
+
+  .main__solutions {
+    padding: 83px 15px 20px;
+  }
+
+  .main__solutions .heading-block {
+    padding: 0 40px;
+  }
+
+  .main__solutions-heading {
+    font-size: 40px;
+    margin-bottom: 28px;
+  }
+
+  .experiences .card {
+    width: 50%;
+  }
+
+  .solutions_card {
+    margin-top: 80px;
+    padding: 80px 57px;
+  }
+
+  .experiences .posts {
+    padding: 14px 50px 64px;
+  }
+
+  .experiences .user-image {
+    width: 25px;
+    height: 25px;
+  }
+
+  .user-profile h2 {
+    font-size: 12px;
+  }
+
+  .circle {
+    width: 400px;
+    height: 400px;
+    top: 158px;
+  }
+
+  .footer-info {
+    margin-bottom: 220px;
+  }
+
+  .footer-hero-text {
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 767px) {
+  .main__container {
+    height: calc(100vh - 47px);
   }
 
   .navbar {
@@ -616,31 +1089,23 @@ footer .content-wrap {
   }
 
   .main__hero {
-    padding: 8px 17px;
+    padding: 13px 17px 50px;
   }
 
   .main__hero-heading {
-    font-size: 38px;
-    margin-bottom: 240px;
+    font-size: 61px;
+    font-weight: 400;
+    padding-top: 40px;
   }
 
   .main__balls-container {
-    gap: 1vw;
-    top: 40%;
+    gap: 3vw;
+    top: 46%;
   }
 
   .main__ball {
-    width: 16px;
-    height: 16px;
-  }
-
-  .main__service-sub-heading {
-    font-size: 37px;
-    position: absolute;
-    top: 212px;
-    bottom: auto;
-    right: 11px;
-    font-weight: 400;
+    width: 18px;
+    height: 18px;
   }
 
   .secondary-text-container {
@@ -660,6 +1125,10 @@ footer .content-wrap {
     padding: 110px 15px 15px;
   }
 
+  .main__solutions .heading-block {
+    padding: 0;
+  }
+
   .main__solutions-heading {
     font-size: 35px;
     line-height: 1.2;
@@ -668,7 +1137,7 @@ footer .content-wrap {
   }
 
   .main__solutions-heading img {
-    width: 70px;
+    width: 56px;
   }
 
   .btn--purple {
@@ -684,12 +1153,13 @@ footer .content-wrap {
   .card__heading {
     padding: 0;
     font-size: 26px;
+    line-height: 1.7;
   }
 
-  .card__tag {
+  .card__tag--green,
+  .card__tag--purple {
     font-size: 20px;
-    padding: 8px 3px;
-    white-space: nowrap;
+    padding: 6px 3px;
   }
 
   .main__case-studies {
@@ -698,6 +1168,10 @@ footer .content-wrap {
 
   .case-studies__heading {
     font-size: 35px;
+  }
+
+  .case__card {
+    margin-top: 32px;
   }
 
   .case-card__container {
@@ -729,11 +1203,16 @@ footer .content-wrap {
   }
 
   .experiences {
-    padding: 10px 0;
+    padding: 10px 0 68px;
   }
 
   .experiences .posts {
     padding: 12px;
+    margin-top: 38px;
+  }
+
+  .experiences .section-header {
+    padding: 0 10px;
   }
 
   .experiences .section-header h2 {
@@ -741,9 +1220,14 @@ footer .content-wrap {
     line-height: 1.3;
   }
 
+  .experiences .block-header h3 {
+    margin-bottom: 20px;
+  }
+
   .experiences .card {
     width: 100%;
     margin-bottom: 20px;
+    padding: 0 12px;
   }
 
   .experiences .card-content {
@@ -756,7 +1240,7 @@ footer .content-wrap {
 
   .experiences .content-bottom {
     height: auto;
-    padding: 21px 15px;
+    padding: 18px 15px;
   }
 
   .experiences .content-bottom .text-wrap {
@@ -771,6 +1255,11 @@ footer .content-wrap {
   .experiences .user-image {
     width: 25px;
     height: 25px;
+    margin-right: 5px;
+  }
+
+  .btn--green {
+    padding: 22px 20px;
   }
 
   .user-profile h2 {
@@ -815,7 +1304,7 @@ footer .content-wrap {
 
   .call-button,
   .team-button {
-    padding: 20px;
+    padding: 20px 25px;
     font-size: 15px;
   }
 
@@ -829,19 +1318,20 @@ footer .content-wrap {
     font-size: 35px;
   }
 
+  .footer-bottom {
+    margin-top: 20px;
+  }
+
   .footer-bottom a {
     padding: 20px;
     font-size: 14px;
     margin: 10px 6px;
   }
 
-  .footer-bottom a:first-child {
-    width: 100%;
-  }
-
   .social-links {
     display: flex;
     flex-wrap: wrap;
+    margin-left: 0;
   }
 
   .social-links a {
@@ -856,10 +1346,26 @@ footer .content-wrap {
   }
 
   .social-links a:first-child {
-    margin-right: 25px;
+    margin-right: 15px;
+  }
+
+  footer .link-wrap {
+    width: 100%;
   }
 
   .credits {
     font-size: 15px;
+  }
+}
+
+@media (max-width: 520px) {
+  .main__balls-container {
+    gap: 2vw;
+    top: 46%;
+  }
+
+  .main__ball {
+    width: 16px;
+    height: 16px;
   }
 }

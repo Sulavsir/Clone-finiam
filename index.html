@@ -41,14 +41,15 @@
           We're hiring
         </button>
       </nav>
-      <button
+      <div
         class="navbar__menu-toggle"
         aria-label="Toggle navigation"
         aria-expanded="false"
         aria-controls="nav-menu"
       >
-        &#9776;
-      </button>
+        <span></span>
+        <span></span>
+      </div>
     </header>
 
     <main class="main">
@@ -79,7 +80,7 @@
               chaos?
             </h1>
           </div>
-          <div class="text-wrap secondary-text-container">
+          <div class="secondary-text-container">
             <p class="main__service-description">
               We learn from every experience by pushing the boundaries
               <br />past the ordinary. Let’s simplify fintech and web3,
@@ -92,35 +93,32 @@
 
       <section class="main__solutions">
         <div class="container">
-          <h1 class="main__solutions-heading">
-            We tackle each project as a new partnership
-            <img src="./assets/asset1.png" /> and make sure to simplify every
-            process <img src="./assets/asset2.png" />, even when facing the most
-            complex problems.
-          </h1>
-          <button class="btn btn--purple">Know more about Finiam</button>
+          <div class="heading-block">
+            <h1 class="main__solutions-heading">
+              We tackle each project as a new partnership
+              <img src="./assets/asset1.png" /> and make sure to simplify every
+              process <img src="./assets/asset2.png" />, even when facing the
+              most complex problems.
+            </h1>
+            <button class="btn btn--purple">Know more about Finiam</button>
+          </div>
         </div>
         <div class="solutions_card">
           <div class="container">
             <h1 class="card__heading">
               <span style="margin-left: 10px">We work in</span>
-              <span class="card__tag card__tag--green">Web Development</span>
-              <span class="card__tag card__tag--green">DevOps</span>
-              <span class="card__tag card__tag--green"
-                >Smart Contract Development</span
-              >
-              <span class="card__tag card__tag--green"
-                >Product Development</span
-              >
-              <span class="card__tag card__tag--green">Researchg</span> , using
-              <span class="card__tag card__tag--purple">Ruby on Rails</span>
-              <span class="card__tag card__tag--purple">Node</span>
-              <span class="card__tag card__tag--purple">React</span>
-              <span class="card__tag card__tag--purple">Elixir & Phoenix</span>
-              <span class="card__tag card__tag--purple">Solidity</span>
-              and learning
-              <span class="card__tag card__tag--purple">Rust</span>
-              <span class="card__tag card__tag--purple">Svelte</span>.
+              <span class="card__tag--green">Web Development</span>
+              <span class="card__tag--green">DevOps</span>
+              <span class="card__tag--green">Smart Contract Development</span>
+              <span class="card__tag--green">Product Development</span>
+              <span class="card__tag--green">Research</span>,using
+              <span class="card__tag--purple">Ruby on Rails</span>
+              <span class="card__tag--purple">Node</span>
+              <span class="card__tag--purple">React</span>
+              <span class="card__tag--purple">Elixir & Phoenix</span>
+              <span class="card__tag--purple">Solidity</span>
+              and learning <span class="card__tag--purple">Rust</span>
+              <span class="card__tag--purple">Svelte</span>.
             </h1>
           </div>
         </div>
@@ -270,8 +268,10 @@
             <span>Let’s build the next big thing, together.</span>
           </div>
           <div class="footer-bottom">
-            <div class="social-links">
+            <div class="link-wrap">
               <a href="mailto:contact@finiam.com">contact@finiam.com</a>
+            </div>
+            <div class="social-links">
               <a href="#">TW</a>
               <a href="#">IN</a>
             </div>
