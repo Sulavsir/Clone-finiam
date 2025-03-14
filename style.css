@@ -1,14 +1,24 @@
+@font-face {
+  font-family: "The Sans";
+  src: url("./fonts/TheSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
 }
 
 ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: "The Sans", sans-serif;
 }
 
 .main__hero-heading {
@@ -89,6 +99,7 @@ body {
 .btn--primary:hover {
   background-color: #272727;
   color: white;
+  transform: translate3d(0px, -3px, 0px) scale3d(1.05, 1.05, 1.05);
 }
 
 .navbar__menu-toggle {
@@ -146,10 +157,10 @@ body {
 }
 
 .main__hero-heading {
-  font-size: 117px;
+  font-size: 126px;
   line-height: 1;
   color: #fbf5f1;
-  font-weight: bold;
+  font-weight: 400;
 }
 
 .main__service-sub-heading {
@@ -161,6 +172,7 @@ body {
   position: absolute;
   bottom: 10%;
   right: 11px;
+  font-weight: 400;
 }
 
 .main__service-description {
@@ -183,7 +195,7 @@ body {
 .main__solutions-heading {
   font-size: 95px;
   line-height: 1;
-  font-weight: 500;
+  font-weight: 400;
   margin-bottom: 95px;
   margin-left: -25px;
   letter-spacing: -3px;
@@ -211,6 +223,7 @@ body {
 .btn--purple:hover {
   background-color: #272727;
   color: white;
+  transform: translate3d(0px, -3px, 0px) scale3d(1.05, 1.05, 1.05);
 }
 
 .solutions_card {
@@ -239,7 +252,7 @@ body {
   border: 1px solid #77764c;
   background-color: #77764c;
   color: #d3d382;
-  border-radius: 5px;
+  border-radius: 12px;
   padding: 15px 10px;
   white-space: nowrap;
 }
@@ -251,6 +264,7 @@ body {
   border-radius: 5px;
   padding: 15px 10px;
   white-space: nowrap;
+  border-radius: 12px;
 }
 
 .main__case-studies {
@@ -466,10 +480,12 @@ body {
   cursor: pointer;
   transition: 0.3s;
   margin-top: 56px;
+  transition: transform 0.3s ease-in-out;
 }
 .btn--orange:hover {
   background-color: #272727;
   color: white;
+  transform: translate3d(0px, -3px, 0px) scale3d(1.05, 1.05, 1.05);
 }
 
 .btn--green {
@@ -484,12 +500,13 @@ body {
   margin-top: 56px;
 }
 .text-wrap h4 {
-  font-weight: 200;
+  font-weight: 500;
 }
 
 .btn--green:hover {
   background-color: #272727;
   color: white;
+  transform: translate3d(0px, -3px, 0px) scale3d(1.05, 1.05, 1.05);
 }
 
 footer {
@@ -550,6 +567,7 @@ footer .content-wrap {
   font-size: 26px;
   line-height: 1;
   cursor: pointer;
+  transition: transform 0.3s ease-in-out;
 }
 
 .call-button {
@@ -558,19 +576,19 @@ footer .content-wrap {
   margin-right: 10px;
   border: 2px solid #fff;
 }
-.call-button:hover {
-  background-color: #272727;
-  color: white;
-}
+
 .team-button {
   background: #c5a6f7;
   color: black;
   border: 2px solid #c5a6f7;
 }
+.call-button:hover,
 .team-button:hover {
   background-color: #272727;
   color: white;
+  transform: translate3d(0px, -3px, 0px) scale3d(1.05, 1.05, 1.05);
 }
+
 .footer-nav ul li:hover {
   text-decoration: underline;
 }
@@ -599,7 +617,7 @@ footer .content-wrap {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin-top: 20px;
 }
 
@@ -634,15 +652,16 @@ footer .content-wrap {
   font-size: 27px;
   opacity: 0.6;
   margin-top: 20px;
-  text-align: right;
   cursor: pointer;
+  position: absolute;
+  right: 0;
 }
 .credits:hover {
   font-size: 30px;
   opacity: 1;
 }
 .user-profile h2 {
-  font-weight: 400;
+  font-weight: 300;
 }
 
 @media (max-width: 1439px) {
